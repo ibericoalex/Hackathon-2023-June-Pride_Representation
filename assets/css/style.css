@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald", serif;
+}
+
+p {
+    font-size: 1.3rem !important;
+    font-family: karla, sans-serif !important;
+}
+
+nav {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    height: 79px;
+    line-height: 85px;
+}
+
+.social-nav i {
+    font-size: 0.9rem !important;
+}
+
+nav i {
+    color: black;
+    font-style: normal;
+}
+
+/* .story {
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    z-index: 999;
+} */
+
+.mobile-site-bar {
+    display: flex !important;
+    height: 100vh !important;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(247, 216, 228) !important;
+}
+
+/* ----------scrollbar styling  ------------*/
+::-webkit-scrollbar {
+    width: .5vw;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #5db1e2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(122deg, rgba(51, 0, 102, 0.7) 0%, rgba(255, 0, 102, 0.7) 25%, rgba(255, 153, 0, 0.7) 50%, rgba(255, 255, 0, 0.7) 75%, rgba(0, 255, 204, 0.7) 100%);
+}
+
+.mobile-links,
+.mobile-links li a {
+    width: 100% !important;
+    font-size: 1.7rem !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 1rem !important;
+}
+
+
+/* ------------ Hero styling ------------ */
+.hero {
+    height: 507.75px;
+    background: rgb(51, 0, 102);
+    background: linear-gradient(122deg, rgba(51, 0, 102, 0.7) 0%, rgba(255, 0, 102, 0.7) 25%, rgba(255, 153, 0, 0.7) 50%, rgba(255, 255, 0, 0.7) 75%, rgba(0, 255, 204, 0.7) 100%);
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    transition: 1s ease-in;
+}
+
+.hero-box {
+    position: relative;
+    height: 100%;
+}
+
+.hero-left-img {
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+}
+
+.hero-txt {
+    font-size: 2.8rem;
+    line-height: 1.4;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-family: "Oswald", serif;
+    font-weight: 400;
+}
+
+.hero-title {
+    margin-top: 80px;
+    position: absolute !important;
+    z-index: 99;
+}
+
+#media1 {
+    width: 80%;
+    height: 30px;
+}
+
+.pod-media {
+    overflow: hidden;
+}
+
+.media-ply {
+    width: 100%;
+    height: 30px;
+}
+
+.media-ply-txt {
+    margin: 0 !important;
+    margin-bottom: 1rem !important;
+}
+
+.article-box {
+    padding-top: 2rem !important;
+    padding-bottom: 0.6rem !important;
+}
+
+/* ----------- Home page styling ------------ */
+.home-nav {
+    display: flex;
+    align-items: center;
+    padding-top: 6rem;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.home-container {
+    padding-top: 6rem;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.home-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98.5%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.home-card {
+    width: 32vw;
+    position: relative;
+    overflow: hidden;
+    margin: 3px;
+
+}
+
+.home-img {
+    width: 100%;
+}
+
+.home-card:hover {
+    opacity: 0.5;
+}
+
+.home-txt {
+    font-size: clamp(2rem, 3vw, 5rem);
+    font-weight: bold;
+    position: absolute;
+    color: #fff !important;
+    top: 81%;
+    left: 39%;
+    transform: translate(-33%, -30%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#voiced-unveiled {
+    margin-bottom: 2.4rem !important;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    padding: 5px;
+}
+
+/* ------------ History page CSS ------------ */
+
+.hero-image {
+    height: 507.75px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/assets/images/hero-image-history.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.description {
+    margin-bottom: 30px;
+}
+
+.break {
+    border: 0;
+    height: 1px;
+    background: #333;
+    align-items: center;
+    margin-bottom: 40px;
+    background-image: linear-gradient(to right, #FAFAFA, #000, #FAFAFA);
+}
+
+
+/* ------------ Conversation page CSS ------------ */
+.discussion-heading {
+    margin-left: 50px;
+}
+
+.conversation-image {
+    height: 40vh;
+    background: url("../images/conversation3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 30px !important;
+}
+
+.conv {
+    width: 70vw;
+    margin: auto;
+    text-align: center;
+}
+
+#empatheticQuestion {
+    max-width: 750px;
+}
+
+/* ------------  Milestones page CSS ------------  */
+
+.hero-image {
+    height: 507.75px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+        url("../images/hero-image-history.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.event-container {
+    position: relative;
+}
+
+.second-hero-image {
+    position: relative;
+    height: 507.75px !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/event.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    z-index: 1;
+    color: #fff;
+}
+
+.text-overlay .description {
+    margin-top: 20px;
+}
+
+.description {
+    margin-bottom: 30px;
+}
+
+.break {
+    border: 0;
+    height: 1px;
+    background: #333;
+    align-items: center;
+    margin-bottom: 40px;
+    background-image: linear-gradient(to right, #fafafa, #000, #fafafa);
+}
+
+.turing-bottom-image {
+    margin-bottom: 30px;
+}
+
+
+/* ------------ Testimonials audio ------------ */
+
+audio {
+    width: 480px;
+}
+
+.fancy-btn {
+    font-weight: bold !important;
+    font-size: 0.9rem !important;
+}
+
+/* ------------ FOOTER QUERIES ------------ */
+.social-nav-footer {
+    padding: 1.5rem;
+    font-size: 1.4rem;
+}
+
+footer {
+    padding: 2rem 3rem 1rem;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+
+.footer-text {
+    width: 80%;
+    padding-bottom: 1rem;
+    margin: auto !important;
+    font-size: 0.9rem !important;
+
+}
+
+
+@keyframes pride-gradient {
+    0% {
+        background-color: #E40303;
+    }
+
+    20% {
+        background-color: #FF8C00;
+    }
+
+    40% {
+        background-color: #FFED00;
+    }
+
+    60% {
+        background-color: #008026;
+    }
+
+    80% {
+        background-color: #004DFF;
+    }
+
+    100% {
+        background-color: #750787;
+    }
+}
+
+.error-pg-bx {
+    background: linear-gradient(122deg, #330066b3 0%, #ff0066b3 25%, #ff9900b3 50%, #ffff00b3 75%, #00ffccb3 100%);
+    padding: 4rem 0;
+    margin: 6rem 0;
+    animation: pride-gradient 7s linear infinite;
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+
+@media screen and (max-width: 500px) {
+    audio {
+        width: 100%;
+    }
+}
+
+/* Screens above 992px */
+@media only screen and (max-width: 993px) {
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .home-card {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .home-container {
+        height: 95vh;
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Screens between 769px and 992px */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    .home-container {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .hero-img {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .home-txt {
+        font-size: 4rem;
+    }
+}
+
+/* Screens up to 768px */
+@media only screen and (max-width: 599px) {
+    .home-card {
+        width: 90%;
+    }
+
+}
